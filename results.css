@@ -1,0 +1,27 @@
+.plot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: flex-start;
+}
+.plot div {
+    margin-right: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: auto;
+    width: 70%;
+}
+.plot img {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 600px;
+    margin: 20px;
+    align-content: center;
+
+}
+
+body {
+    background-color: rgb(143, 227, 199);
+}
