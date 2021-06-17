@@ -29,16 +29,21 @@
     <main>
         <div class="Data">
             <div class= "analysis"></div>
+                <h2>Data</h2> 
+                
+                <p>The <b>North Atlantic Oscillation (NAO) climate index</b> is the difference in sea level pressure between two weather stations - one located in Portugal within the high pressure region and one located in Iceland within the low pressure region. The index is calculated over the winter (Dec - March) when the NAO has the most influence on climate. This data is available <a href="https://climatedataguide.ucar.edu/climate-data/hurrell-north-atlantic-oscillation-nao-index-station-based" target="_blank">here</a>.
+                </p>
+
+                <p> <b>Gridded sea surface temperature (SST)</b>, more specifically HadISST, is a combination of satellite data and SST measurements from ship instruments. This data is available <a href="https://www.metoffice.gov.uk/hadobs/hadisst/" target="_blank">here</a>. </p>
+
                 <h2>Data Analysis</h2>
 
-                <h3>Processing sea surface temperature data</h3>
-                <p>We used a pre-built function to calculate the winter average of sea surface temperature (SST) data over the months December to March so that we could compare it to the North Altantic Oscillation (NAO) climate index. To understand how SST differs each year from the long-term mean for the region, we computed SST anomalies by subtracting the SST of each grid point from the SST winter average.</p>
+                <p>We used a pre-built function to calculate the winter average of sea surface temperature (SST) data over the months December to March so that we could compare it to the NAO climate index. To understand how SST differs each year from the long-term mean for the region, we computed SST anomalies by subtracting the SST of each grid point from the SST winter average.</p>
 
-                <h3>Identifying strong NAO years</h3>
                 <p>As we were using a dataframe full of NAO values over the course of 155 years (1865-2020), we wanted to calculate the average to find what the NAO should usually be. Then, with this average, we would be able to compare it to various other years to identify which years had a positively strong NAO.</p>
+
                 <p>After calculating the NAO average, we compared the average to the NAO index of each year. For the years that had an NAO index greater than the NAO average, we separated them and focused on observing those years. </p>
 
-                <h3>Visualizing sea surface temperature data</h3>
                 <p>Now that we had identified the years with strong NAOs, we wanted to see if that had any visual effect on the sea surface temperature. We used code in order to index our processed SST data corresponding to the years of strong NAO we had previously found. Once we had filtered out a list of years with their corresponding SST data, we put this information into our code and created an animation that runs through the years of strong NAO. As the animation plays, we can see the anomalies in sea surface temperature over the years.</p>
                 
             <div class= "code">
